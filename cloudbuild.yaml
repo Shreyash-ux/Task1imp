@@ -9,7 +9,7 @@ steps:
       - |
         make all-resource
 
-logsBucket: 'gs://logs-cloudbuild'
+logsBucket: 'gs://hellofire'
 options:
   logging: GCS_ONLY
 timeout: 86400s
