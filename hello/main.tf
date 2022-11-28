@@ -2,10 +2,10 @@ provider "google" {
   project = var.project_name
   region  = var.region_name
 }
-resource "google_service_account" "service_account" {
-  account_id   = "service-hello-test-account-id"
-  display_name = "Hello Test Service Account"
-}
+# resource "google_service_account" "service_account" {
+#   account_id   = "service-hello-test-account-id"
+#   display_name = "Hello Test Service Account"
+# }
 resource "google_compute_network" "hello_test_vpc_network" {
   name = "hello-vpc-network"
 }
