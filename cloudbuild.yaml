@@ -1,5 +1,5 @@
 steps:
-  - name: 'gcr.io/PROJECT_ID/gcloud-terraform:latest' #create this docker image using the dockerfile
+  - name: 'gcr.io/fabled-buckeye-364706/gcloud-terraform:latest' #create this docker image using the dockerfile
     id: Create the terraform resources
     entrypoint: 'bash'
     args:
