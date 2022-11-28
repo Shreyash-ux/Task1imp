@@ -1,10 +1,12 @@
 all-resource:
-	cd Terraform/env/global/tfstate-gcs; \
-    terraform init && terraform fmt && terraform validate && terraform plan && terraform apply --var-file=terraform.tfvars --auto-approve
-	cd Terraform/env/global/vpc_subnets; \
-    terraform init && terraform fmt && terraform validate && terraform plan && terraform apply --var-file=terraform.tfvars --auto-approve
-	cd Terraform/env/region/asia-south1/gke; \
-    terraform init && terraform fmt && terraform validate && terraform plan && terraform apply --var-file=terraform.tfvars --auto-approve
+	# cd Terraform/env/global/tfstate-gcs; \
+    # terraform init && terraform fmt && terraform validate && terraform plan && terraform apply --var-file=terraform.tfvars --auto-approve
+	# cd Terraform/env/global/vpc_subnets; \
+    # terraform init && terraform fmt && terraform validate && terraform plan && terraform apply --var-file=terraform.tfvars --auto-approve
+	# cd Terraform/env/region/asia-south1/gke; \
+    # terraform init && terraform fmt && terraform validate && terraform plan && terraform apply --var-file=terraform.tfvars --auto-approve
+	cd ./hello && terraform init && terraform fmt
+	cd ./hello && terraform apply
 
 
 
