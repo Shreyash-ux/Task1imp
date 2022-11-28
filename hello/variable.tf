@@ -1,6 +1,6 @@
 variable "project_name" {
   type    = string
-  default = "task-369506"
+  default = "fabled-buckeye-364706"
 }
 variable "region_name" {
   type    = string
